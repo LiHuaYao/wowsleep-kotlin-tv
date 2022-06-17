@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.idianwoo.tv.steward2.activity.PayActivity">
+
+    <include android:id="@+id/header" layout="@layout/include_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="126px"
+        android:layout_marginLeft="140px"
+        android:layout_marginRight="140px"
+        android:layout_below="@id/header"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <!--左边-->
+        <LinearLayout
+            android:id="@+id/left_content"
+            android:layout_width="488px"
+            android:layout_height="wrap_content"
+            android:minHeight="666px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/goods_details_right_background"
+            android:gravity="top|center"
+            android:orientation="vertical"
+            android:padding="20px">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="118px"
+                android:text="@string/select_payment"
+                android:textColor="@color/white"
+                android:textSize="32px"
+                android:gravity="center_vertical"/>
+            <!--现金支付-->
+            <RelativeLayout
+                android:id="@+id/cash_pay"
+                android:layout_width="match_parent"
+                android:layout_height="118px"
+                android:focusable="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="32px"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="30px"
+                    android:text="@string/cash_payment"/>
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/cash_pay_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:padding="0px"
+                    android:theme="@style/SubmitOrderRightCheckBox"/>
+            </RelativeLayout>
+            <!--挂账支付-->
+            <RelativeLayout
+                android:id="@+id/charge_up_pay"
+                android:layout_width="match_parent"
+                android:layout_height="118px"
+                android:focusable="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="32px"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="30px"
+                    android:text="@string/account_payment"/>
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/charge_up_pay_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:padding="0px"
+                    android:theme="@style/SubmitOrderRightCheckBox"/>
+            </RelativeLayout>
+            <!--微信支付-->
+            <RelativeLayout
+                    android:id="@+id/wechat_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="118px"
+                    android:layout_gravity="center_vertical"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="30px"
+                        android:text="@string/wechat_payment"
+                        android:textColor="@color/white"
+                        android:textSize="32px" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/wechat_pay_check_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30px"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:padding="0px"
+                        android:theme="@style/SubmitOrderRightCheckBox" />
+            </RelativeLayout>
+            <!--免费体验-->
+            <RelativeLayout
+                android:id="@+id/free_pay"
+                android:layout_width="match_parent"
+                android:layout_height="118px"
+                android:layout_gravity="center_vertical"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30px"
+                    android:text="@string/free2"
+                    android:textColor="@color/white"
+                    android:textSize="32px" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/free_pay_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="30px"
+                    android:focusable="false"
+                    android:padding="0px"
+                    android:theme="@style/SubmitOrderRightCheckBox" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!--中间-->
+        <LinearLayout
+            android:id="@+id/center_content"
+            android:layout_width="498px"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/left_content"
+            android:background="@drawable/goods_details_right_background"
+            android:minHeight="666px"
+            android:gravity="top|center"
+            android:orientation="vertical"
+            android:layout_marginLeft="14px"
+            android:padding="20px">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="118px"
+                android:text="@string/select_coupon"
+                android:textColor="@color/white"
+                android:textSize="32px"
+                android:gravity="center_vertical"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="118px"
+                android:text="@string/coupon_unavailable"
+                android:textColor="@color/white"
+                android:textSize="28px"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+        <!--右边-->
+        <LinearLayout
+            android:id="@+id/right_content"
+            android:layout_width="622px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/goods_details_right_background"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="30px"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:layout_marginLeft="14px"
+            android:paddingLeft="50px"
+            android:paddingRight="50px">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shopping_list"
+                android:textColor="@color/white"
+                android:textSize="32px"/>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:background="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/total"
+                    android:textSize="32px"
+                    android:textColor="@color/white"/>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/price_sum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:layout_centerVertical="true"
+                        android:text="12"
+                        android:textColor="@color/red"
+                        android:textSize="38px" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="注：预计送达时间为15分钟左右"
+                android:paddingTop="20px"
+                android:paddingBottom="20px"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textSize="28px"/>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="500px"
+                android:layout_height="90px"
+                android:gravity="center"
+                android:focusable="true"
+                android:text="@string/confirm_order"
+                android:textSize="36px"
+                android:padding="0px"
+                android:textColor="@color/white"
+                android:background="@drawable/button_orange"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

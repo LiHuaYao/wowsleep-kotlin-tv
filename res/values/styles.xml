@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--提交订单页右侧checkbox-->
+    <style name="SubmitOrderRightCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+    <!--提交订单页右侧checkbox-->
+    <style name="SubmitOrderLeftCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/gray</item>
+    </style>
+
+    <declare-styleable name="Rating">
+        <!--间距-->
+        <attr format="dimension" name="distance"/>
+        <!--大小-->
+        <attr format="dimension" name="size"/>
+        <!--个数-->
+        <attr format="integer" name="count"/>
+        <!--评分-->
+        <attr format="integer" name="mark"/>
+        <!--空图-->
+        <attr format="reference" name="empty"/>
+        <!--满图-->
+        <attr format="reference" name="fill"/>
+    </declare-styleable>
+
+</resources>

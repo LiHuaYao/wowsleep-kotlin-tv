@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+>
+
+    <Button
+        android:focusable="false"
+        android:id="@+id/up_btn"
+        android:layout_width="98px"
+        android:layout_height="98px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_marginRight="36px"
+        android:layout_marginTop="36px"
+        android:background="@drawable/up_down_btn"
+        android:textSize="50px"
+        android:text="@string/icon_up" />
+
+    <Button
+        android:focusable="false"
+        android:id="@+id/down_btn"
+        android:layout_width="98px"
+        android:layout_height="98px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36px"
+        android:layout_marginRight="36px"
+        android:background="@drawable/up_down_btn"
+        android:gravity="center"
+        android:text="@string/icon_down"
+        android:textSize="50px" />
+
+</RelativeLayout>

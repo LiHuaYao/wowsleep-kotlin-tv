@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_border"
+    android:orientation="horizontal"
+    android:id="@+id/root"
+>
+    <Button
+        android:id="@+id/btn_decrease"
+        android:layout_width="80px"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quantity_less_btn"
+        android:focusable="true"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/icon_less"
+        android:textSize="36px"/>
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="80px"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:text="1"
+        android:textSize="36px"/>
+
+    <Button
+        android:id="@+id/btn_increase"
+        android:layout_width="80px"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quantity_more_btn"
+        android:focusable="true"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/icon_more"
+        android:textSize="36px"/>
+</LinearLayout>

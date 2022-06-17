@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#fca441</color>
+
+    <color name="lightgray">#D6E3EA</color><!--浅灰-->
+    <color name="gray2">#9B9B9B</color><!--灰色 -->
+    <color name="gray">#666666</color><!--灰色 -->
+    <color name="red">#FF4A4A</color><!--红色 -->
+    <color name="white">#FFFFFF</color><!--白色 -->
+    <color name="coral">#FF7F50</color><!--珊瑚色 -->
+    <color name="lightskyblue">#87CEFA</color><!--亮天蓝色 -->
+    <color name="blue">#00a0e9</color><!--蓝色 -->
+</resources>

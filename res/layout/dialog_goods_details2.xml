@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background"
+    android:padding="20px"
+    android:orientation="horizontal"
+    tools:context="com.idianwoo.tv.steward2.activity.GoodsDetails2Activity">
+
+        <ImageView
+            android:layout_margin="0px"
+            android:layout_width="750px"
+            android:layout_height="750px"
+            android:src="@drawable/qrcode"/>
+
+        <RelativeLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20px">
+
+                <LinearLayout
+                    android:id="@+id/price_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20px">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price"
+                            android:textColor="@color/gray"
+                            android:textSize="32px" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="18px"
+                            android:text="@string/icon_cny"
+                            android:textColor="@color/red"
+                            android:textSize="36px" />
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:textColor="@color/red"
+                            android:textSize="36px"/>
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_below="@id/price_parent"
+                    android:layout_marginTop="20px"
+                    android:layout_width="match_parent"
+                    android:layout_height="500px"
+                    android:layout_centerHorizontal="true">
+                    <LinearLayout
+                        android:id="@+id/main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- 一组规格属性 -->
+                        <com.idianwoo.tv.widget.GoodsOptionsView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </com.idianwoo.tv.widget.GoodsOptionsView>
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <Button
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20px"
+                    android:layout_width="500px"
+                    android:layout_height="90px"
+                    android:background="@drawable/button_background_selector"
+                    android:text="@string/confirm_reselection"
+                    android:textColor="@color/white"
+                    android:textSize="36px"
+                    android:gravity="center"
+                    android:focusable="true"
+                    android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+</LinearLayout>
